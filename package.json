@@ -1,0 +1,25 @@
+{
+  "name": "npm-coffee-template",
+  "version": "0.0.1",
+  "description": "A template for node.js packages written in CoffeeScript.",
+  "author": {
+    "name": "Drew Inglis (drewinglis)"
+  },
+  "homepage": "https://github.com/drewinglis/npm-coffee-template",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:drewinglis/npm-coffee-template.git"
+  },
+  "license": "MIT",
+  "main": "./lib/index",
+  "scripts": {
+    "prepublish": "make build",
+    "postinstall": "node setup.js postinstall",
+    "test": "make test"
+  },
+  "dependencies": {
+    "coffee-script": "1.8.0",
+  },
+  "devDependencies": {
+  }
+}
